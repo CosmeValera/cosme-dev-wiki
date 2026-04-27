@@ -1,12 +1,12 @@
-# 😊 ReactProjects
+# 😊 cosme-dev-wiki
 
-This repository started as a place to learn React, and the name stayed. At this point it is closer to a personal frontend and full-stack wiki: a collection of small projects, experiments, notes, and topic-focused `README.md` files that I use as reference material.
+My personal code wiki. This started as a place to learn React (the original name stuck around longer than it should have). It's now a collection of small projects, experiments, and topic-focused `README.md` files covering frontend, architecture, databases, DevOps, testing, and more. Built up over time as reference material I actually use.
 
 ## Main entry points
 
 > [!NOTE]
 > 
-> These entry points are not complete and might not be updated. Browse the actual folders to be sure
+> These entry points are just a guide and might not be 100% updated. Also, there’s more content inside the repository folders
 
 ### Frontend
 - [React](./frontend/react/README.md)
