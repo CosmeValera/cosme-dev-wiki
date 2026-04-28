@@ -1,72 +1,36 @@
 # Monorepo
-All code for multiple projects is stored in a single repository.
-Options for monorepos are: NX, and Turborepo.
 
-## Create project
+### Quick overview
+All code for multiple projects is stored in a single repository. The main modern options for monorepo frameworks are NX and Turborepo.
+
+In general, Turborepo is more lightweight and easier to setup, while NX requires more resources and provides more configuration options. Personally, I'd always go with Turborepo, unless you really need NX features.
+
+---
 
 ### NX
-```bash
-npx create-nx-workspace@latest nxapp
-```
-> Check out [NX docu](https://nx.dev/)
+
+> [!TIP]
+>
+> Check out my [notes about NX](./nx/nx-attempt-2-monorepo-react/README.md)
 
 ### Turborepo
-```bash
-npx create-turbo@latest turboapp
-```
 
-> Check out [Turborepo docu](https://turborepo.dev/)
-
----
-
-## 🚀 Getting started (NX)
-### Install all dependencies:
-```bash
-npm i
-```
-<small>Common dependencies will be installed in the root `node_modules`</small>
-
-### List apps:
-```bash
-npx nx show projects
-```
-
-### Run ALL apps:
-```bash
-npm run start
-```
-or
-```bash
-npx nx run-many -t start
-```
-
-### Run ONE app:
-```bash
-npx nx run my-app-1:start
-```
-<small>Change my-app-1* with the app you want to start!</small>
-
-
-### Test ONE app:
-```bash
-npx nx run my-app-1:test
-```
-<small>Change my-app-1* with the app you want to test!</small>
+> [!TIP]
+>
+> Check out my [notes about Turborepo](./turborepo/2-turboapp/README.md)
 
 ---
 
-## Monorepo vs Polyrepo
+### Monorepo vs Polyrepo
 
-| Feature               | Monorepos                                     | Polyrepos                                      |
-|-----------------------|-----------------------------------------------|------------------------------------------------|
-| **Definition**        | ![blue](https://via.placeholder.com/15/ADD8E6/000000?text=+) Single repository for multiple projects       | ![blue](https://via.placeholder.com/15/ADD8E6/000000?text=+) Separate repositories for each project         |
-| **Dependency Management** | ![green](https://via.placeholder.com/15/00FF00/000000?text=+) Simplified, centralized                       | ![red](https://via.placeholder.com/15/FF0000/000000?text=+) More complex, harder to manage                 |
-| **Code Sharing**      | ![green](https://via.placeholder.com/15/00FF00/000000?text=+) Easy and promotes reuse                       | ![red](https://via.placeholder.com/15/FF0000/000000?text=+) Difficult, often leads to duplication          |
-| **CI/CD**             | ![green](https://via.placeholder.com/15/00FF00/000000?text=+) Unified, centralized                          | ![red](https://via.placeholder.com/15/FF0000/000000?text=+) Tailored, separate pipelines                   |
-| **Code Navigation**   | ![green](https://via.placeholder.com/15/00FF00/000000?text=+) All in one place                              | ![red](https://via.placeholder.com/15/FF0000/000000?text=+) More complex, across multiple repos            |
-| **Scalability**       | ![red](https://via.placeholder.com/15/FF0000/000000?text=+) Can become slow and complex                   | ![green](https://via.placeholder.com/15/00FF00/000000?text=+) Easier to scale with smaller repos             |
-| **Permissions**       | ![red](https://via.placeholder.com/15/FF0000/000000?text=+) Harder to manage                              | ![green](https://via.placeholder.com/15/00FF00/000000?text=+) Easier, per repository                         |
-| **Build Overhead**    | ![red](https://via.placeholder.com/15/FF0000/000000?text=+) Higher, can trigger broad rebuilds            | ![green](https://via.placeholder.com/15/00FF00/000000?text=+) Lower, changes affect only the specific repo   |
-| **Performance**       | ![red](https://via.placeholder.com/15/FF0000/000000?text=+) Slower, single repo                           | ![green](https://via.placeholder.com/15/00FF00/000000?text=+) Smaller, faster repos                          |
-
-
+| Feature | Monorepos | Polyrepos |
+| --- | --- | --- |
+| Definition | Single repository for multiple projects | Separate repositories for each project |
+| Dependency Management | Simplified, centralized | More complex, harder to manage |
+| Code Sharing | Easy and promotes reuse | Difficult, often leads to duplication |
+| CI/CD | Unified, centralized | Tailored, separate pipelines |
+| Code Navigation | All in one place | More complex, across multiple repos |
+| Scalability | Can become slow and complex | Easier to scale with smaller repos |
+| Permissions | Harder to manage | Easier, per repository |
+| Build Overhead | Higher, can trigger broad rebuilds | Lower, changes affect only the specific repo |
+| Performance | Slower, single repo | Smaller, faster repos |

@@ -3,16 +3,16 @@
 https://turborepo.dev/
 
 
-Create a turborepo:
+Create a turborepo project:
 ```sh
-npx create-turbo@latest
+npx create-turbo@latest turboapp
 ```
 
 Run all projects with either command:
 ```sh
 npm run dev  # or
-pnpm run dev  # or with Turbo
-pnpm turbo run dev
+pnpm run dev  # or with pnpm (faster)
+pnpm turbo run dev # or with pnpm and turbo (fastest)
 ```
 
 Run one project:

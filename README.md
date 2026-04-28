@@ -18,8 +18,7 @@ My personal code wiki. This started as a place to learn React (the original name
 ### Architecture
 - [Microfrontends simple](./architecture/micro-fes/micro-fe-2-react/readme.md)
 - [Microfrontends: Cross-framework](./architecture/micro-fes/micro-fe-from-basic-sample-try-different-frameworks/README.md)
-- [Monorepos: Turborepo](./architecture/monorepos/turborepo/2-turboapp/README.md)
-- [Monorepos: NX](./architecture/monorepos/README.md)
+- [Monorepos (Turborepo and NX)](./architecture/monorepos/README.md)
 
 ### Testing Tools
 - [MSW with React](./testing/MSW/MSW-projects-1/README.md)
@@ -36,9 +35,9 @@ My personal code wiki. This started as a place to learn React (the original name
 - [SonarQube](./devops/sonarqube/README.md)
 - [Ansible](./devops/ansible/README_ansible-1.MD)
 - [Ansible Vault](./devops/ansible/README_ansible-2-vaults.MD)
-- [Docker](./devops/docker/apuntesDocker.txt)
-- [Nginx](./devops/nginx/apuntes.txt)
-- [Rundeck](./devops/rundeck/RundeckNotes.txt)
+- [Docker](./devops/docker/README.md)
+- [Nginx](./devops/nginx/README.md)
+- [Rundeck](./devops/rundeck/README.md)
 
 
 ### Database / API
