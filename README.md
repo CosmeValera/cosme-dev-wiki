@@ -16,8 +16,8 @@ My personal code wiki. This started as a place to learn React (the original name
 - [Astro](./frontend/astro/README.md)
 
 ### Architecture
-- [Microfrontends (Single and Cross-framework)](./architecture/micro-fes/README.md)
-- [Monorepos (Turborepo and NX)](./architecture/monorepos/README.md)
+- [Microfrontends](./architecture/micro-fes/README.md) (Single and Cross-framework)
+- [Monorepos](./architecture/monorepos/README.md) (Turborepo and NX)
 
 ### Testing Tools
 - [MSW](./testing/MSW/MSW-projects-1/README.md)
