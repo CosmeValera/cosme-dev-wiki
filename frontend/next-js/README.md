@@ -1,5 +1,19 @@
 # Next.js
-The React Framework.
+Next.js is React plus routing, rendering strategies and server features.
+
+Use plain React when you are building a client side app where SEO, server rendering, backend routes and page load performance are not the main problem. For example, an internal dashboard behind a login can often be just React.
+
+Use Next.js when the project needs React, but also needs things around React:
+
+1. File based routing
+2. Server side rendering
+3. Static generation
+4. Better SEO
+5. API routes
+6. Image optimization
+7. Full stack features in the same project
+
+Good examples are ecommerce sites, SaaS apps with public marketing pages, blogs with dynamic parts, dashboards with server side data, or any app where the first page load and SEO matter.
 
 We will be following this [YT Video](https://www.youtube.com/watch?v=jMy4pVZMyLM&ab_channel=midulive), that follows the [docu](https://nextjs.org/learn/dashboard-app/getting-started).
 
