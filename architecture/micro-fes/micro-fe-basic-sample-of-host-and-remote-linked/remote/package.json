@@ -5,13 +5,8 @@
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
     "build:start": "cd dist && PORT=7024 npx serve",
-    "start": "webpack serve --open --mode development",
-    "start:live": "webpack serve --open --mode development --live-reload --hot"
-  },
-  "license": "MIT",
-  "author": {
-    "name": "Jack Herrington",
-    "email": "jherr@pobox.com"
+    "start": "webpack serve --mode development",
+    "start:live": "webpack serve --open --mode development"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
@@ -27,7 +22,8 @@
     "style-loader": "^3.3.0",
     "webpack": "^5.57.1",
     "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.3.1"
+    "webpack-dev-server": "^4.3.1",
+    "dotenv-webpack": "^8.0.1"
   },
   "dependencies": {
     "@babel/runtime": "^7.13.10",
