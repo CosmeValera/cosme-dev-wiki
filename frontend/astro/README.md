@@ -1,8 +1,8 @@
-<!-- https://midu.dev/curso/astro-cms-headless/00-introduccion/01-conceptos-ssg -->
+<!-- https://www.youtube.com/watch?v=WHqZAXHZN_w -->
 
 # 🧑‍🚀 Astro
 
-## Why Astro?
+## Why [Astro](https://astro.build/)?
 Not every tool fits every job. The frontend world has a few main categories: SPAs (React, Vue, Angular) for highly interactive apps, SSGs (Astro, Zola, Hugo, Vitepress) for fast static sites, meta-frameworks (Next, Nuxt) that cover both.
 
 Astro lives in the SSG category, but with more range. It lets you write components in any framework you already know, and only ships JavaScript when a page actually needs it. Great fit when your content is mostly static, but you don't want to be limited by your tooling.

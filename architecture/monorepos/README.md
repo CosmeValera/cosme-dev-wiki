@@ -8,11 +8,14 @@ Options for monorepos are: NX, and Turborepo.
 ```bash
 npx create-nx-workspace@latest nxapp
 ```
+> Check out [NX docu](https://nx.dev/)
 
 ### Turborepo
 ```bash
 npx create-turbo@latest turboapp
 ```
+
+> Check out [Turborepo docu](https://turborepo.dev/)
 
 ---
 
@@ -39,16 +42,16 @@ npx nx run-many -t start
 
 ### Run ONE app:
 ```bash
-npx nx run sccf-tc-spacon-mf:start
+npx nx run my-app-1:start
 ```
-<small>Change sccf-tc-spacon-mf* with the app you want to start!</small>
+<small>Change my-app-1* with the app you want to start!</small>
 
 
 ### Test ONE app:
 ```bash
-npx nx run sccf-tc-spacon-mf:test
+npx nx run my-app-1:test
 ```
-<small>Change sccf-tc-spacon-mf* with the app you want to test!</small>
+<small>Change my-app-1* with the app you want to test!</small>
 
 ---
 

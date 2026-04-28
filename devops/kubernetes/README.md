@@ -1,4 +1,4 @@
-# 🚢 Kubernetes and Helm
+# 🚢 Kubernetes, Helm and Kustomize
 
 ## Kubernetes
 
@@ -10,3 +10,8 @@
 ## Helm
 > [!TIP]
 > For a proper understanding of HELM-> [HELM README](./5-kubernetes-helm-2-long-udemy-course/README.md)
+
+## Kustomize
+
+> [!TIP]
+> For a proper understanding of Kustomize-> [Kustomize README](./3-kubernetes-kustomize/README-3.md)

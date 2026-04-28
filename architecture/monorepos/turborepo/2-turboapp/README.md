@@ -1,4 +1,8 @@
 # Turborepo
+**Docu:**
+https://turborepo.dev/
+
+
 Create a turborepo:
 ```sh
 npx create-turbo@latest
@@ -27,6 +31,8 @@ Add dependency to all project:
 pnpm --workspace-root add tailwindcss  # Or
 pnpm -w add tailwindcss
 ```
+
+Explore more in my [blog-post about Turborepo](https://cosmevalera.dev/blog/optimizing-microfrontends-with-turborepo/)
 
 
 ---

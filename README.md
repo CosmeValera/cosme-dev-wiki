@@ -16,27 +16,37 @@ My personal code wiki. This started as a place to learn React (the original name
 - [Astro](./frontend/astro/README.md)
 
 ### Architecture
-- [Microfrontends](./architecture/micro-fes/micro-fe-2-react/readme.md)
-- [Monorepos](./architecture/monorepos/turborepo/2-turboapp/README.md)
+- [Microfrontends simple](./architecture/micro-fes/micro-fe-2-react/readme.md)
+- [Microfrontends: Cross-framework](./architecture/micro-fes/micro-fe-from-basic-sample-try-different-frameworks/README.md)
+- [Monorepos: Turborepo](./architecture/monorepos/turborepo/2-turboapp/README.md)
+- [Monorepos: NX](./architecture/monorepos/README.md)
+
+### Testing Tools
+- [MSW with React](./testing/MSW/MSW-projects-1/README.md)
+- [Playwright](./testing/PlayWright/PLAYWRIGHT-1-miduconf/README.md)
+- [Test Doubles](./testing/test-doubles/README.md)
+
+
+### DevOps
+- [Kubernetes, Helm and Kustomize](./devops/kubernetes/README.md)
+- [SSL Certificates and cert-manager](./devops/ssl-certificates/README.md)
+- [AWS](./devops/aws/01-midu-aws/README.md)
+- [Jenkins](./devops/jenkins/01-jenkins-beginner-to-pro/README.md)
+- [Keycloak](./devops/keycloak/01-getting-started-with-keycloak/README.md)
+- [SonarQube](./devops/sonarqube/README.md)
+- [Ansible](./devops/ansible/README_ansible-1.MD)
+- [Ansible Vault](./devops/ansible/README_ansible-2-vaults.MD)
+- [Docker](./devops/docker/apuntesDocker.txt)
+- [Nginx](./devops/nginx/apuntes.txt)
+- [Rundeck](./devops/rundeck/RundeckNotes.txt)
+
 
 ### Database / API
 - [GraphQL](./db/GraphQL/README.md)
-- [PostgreSQL example](./db/postgreSql/postgreSql-node/birdster/README.md)
-
-### DevOps
-- [Kubernetes and Helm](./devops/kubernetes/README.md)
-- [SSL Certificates and cert-manager](./devops/ssl-certificates/README.md)
-- [AWS](./devops/aws/01-midu-aws/README.md)
-- [SonarQube](./devops/sonarqube/README.md)
-- [Syslog](./devops/syslog/README.md)
-
-### Testing Tools
-- [MSW with React](./testing-tools/MSW/MSW-projects-1/README.md)
-- [Playwright](./testing-tools/PlayWright/PLAYWRIGHT-1-miduconf/README.md)
-- [Test Doubles](./backend/test-doubles/README.md)
+- [PostgreSQL](./db/postgreSql/postgreSql-node/birdster/README.md)
 
 ### Misc
-- [Webpack](./misc/webpack/README.md)
 - [Zustand](./misc/zustand/README.md)
-- [Grafana](./misc/grafana/README.md)
 - [tRPC](./misc/tRPC/tRPC-1/README.md)
+- [Webpack](./misc/webpack/README.md)
+- [Grafana](./misc/grafana/README.md)
