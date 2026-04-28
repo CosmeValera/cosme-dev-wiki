@@ -16,12 +16,11 @@ My personal code wiki. This started as a place to learn React (the original name
 - [Astro](./frontend/astro/README.md)
 
 ### Architecture
-- [Microfrontends simple](./architecture/micro-fes/micro-fe-2-react/readme.md)
-- [Microfrontends: Cross-framework](./architecture/micro-fes/micro-fe-from-basic-sample-try-different-frameworks/README.md)
+- [Microfrontends (Single and Cross-framework)](./architecture/micro-fes/README.md)
 - [Monorepos (Turborepo and NX)](./architecture/monorepos/README.md)
 
 ### Testing Tools
-- [MSW with React](./testing/MSW/MSW-projects-1/README.md)
+- [MSW](./testing/MSW/MSW-projects-1/README.md)
 - [Playwright](./testing/PlayWright/PLAYWRIGHT-1-miduconf/README.md)
 - [Test Doubles](./testing/test-doubles/README.md)
 
