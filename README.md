@@ -9,9 +9,9 @@ My personal code wiki. This started as a place to learn React (the original name
 > These entry points are just a guide and might not be 100% updated. Also, there’s more content inside the repository folders
 
 ### Frontend
-- [React](./frontend/react/README.md)
-- [Vue](./frontend/vue/README.md)
 - [Angular](./frontend/angular/README.md)
+- [Vue](./frontend/vue/README.md)
+- [React](./frontend/react/README.md)
 - [Next.js](./frontend/next-js/README.md)
 - [Astro](./frontend/astro/README.md)
 
