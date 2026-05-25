@@ -68,3 +68,9 @@ npm run build
 # Preview the production build:
 npm run preview
 ```
+
+If you want to use tailwind execute:
+
+```sh
+npx astro add tailwind
+```
