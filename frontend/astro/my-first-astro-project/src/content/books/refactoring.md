@@ -1,7 +1,7 @@
 ---
 title: Refactoring 
 author: Martin Fowler
-img: refactoring.jpg
+img: books/refactoring.jpg
 readtime: 284
 description: Martin Fowler’s guide to reworking bad code into well-structured code
 buy:

@@ -1,13 +1,33 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+const books = await getCollection("books");
 ---
 
 <Layout title="Dev Books">
   <main class="grid min-h-[70vh] place-content-center">
     <h1 class="text-center text-7xl font-extrabold">
-      Dev 🧑‍💻:
-      <span class="text-purple-400">Books</span>
+      Dev 🧑‍💻: <span class="text-purple-400">Books</span>
     </h1>
-	<p>lor</p>
   </main>
+
+  <section aria-label="Libros recomendados para desarrolladores">
+	<div class="px-4 mx-auto max-w-sceen-xl">
+		<div class="grid gap-6 md:grid-cols-2">
+			{
+				books.map((book) => {
+					const { id, data } = book
+					const { title, author, img, readtime, description, buy } = data
+
+					return (
+						<article>
+							<a href={`/${img}`} alt={title} class="w-full-rouded-lg" > {title} </a>
+						</article>
+					)
+				})
+			}
+		</div>
+	</div>
+  </section>
 </Layout>

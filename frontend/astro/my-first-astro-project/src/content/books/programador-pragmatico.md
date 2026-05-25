@@ -1,7 +1,7 @@
 ---
 title: The Pragmatic Programmer
 author: David Thomas
-img: programador-pragmatico.jpg
+img: books/programador-pragmatico.jpg
 readtime: 174
 description: Aprende Pragmatic programming con este tutorial
 buy:

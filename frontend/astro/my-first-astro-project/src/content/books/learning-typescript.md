@@ -1,7 +1,7 @@
 ---
 title: Learning Typescript
 author: Josh Goldberg
-img: learning-typescript.jpg
+img: books/learning-typescript.jpg
 readtime: 184
 description: Aprende typescript con este tutorial
 buy:

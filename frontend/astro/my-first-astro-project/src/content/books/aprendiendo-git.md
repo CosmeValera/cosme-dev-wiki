@@ -1,7 +1,7 @@
 ---
 title: Aprendiendo Git y GitHub 
 author: Miguel Ángel Durán
-img: aprendiendo-git.jpg
+img: books/aprendiendo-git.jpg
 readtime: 224
 description: Aprende a usar Git y GitHub para gestionar tus proyectos de código
 buy:
