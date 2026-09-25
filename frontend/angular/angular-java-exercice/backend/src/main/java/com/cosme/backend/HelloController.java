@@ -8,14 +8,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController 
 @RequestMapping("/api")
 public class HelloController {
+  public record Greeting(String message) {};
   
   @GetMapping("/hello")
-  public String hello() {
-    return "Hello from Spring!";
+  public Greeting hello() {
+    return new Greeting ("Hello from Spring!");
   }
 
   @GetMapping("/saludo/{name}/{edad}")
-  public String saludo(@PathVariable String name, @PathVariable int edad) {
-    return "Hello from spring, " + name + " your age is " + edad;
+  public Greeting saludo(@PathVariable String name, @PathVariable int edad) {
+    return new Greeting("Hello from spring, " + name + " your age is " + edad);
   }
 }
