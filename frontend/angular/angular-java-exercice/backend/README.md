@@ -9,6 +9,8 @@
 No Maven install needed: `./mvnw` (Maven wrapper) downloads it.
 Use `mvnw.cmd` instead of `./mvnw` in PowerShell/CMD.
 
+> To create the scaffold of the Spring app use https://start.spring.io/
+
 ## Commands
 
 ```bash
