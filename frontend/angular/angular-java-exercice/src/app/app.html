@@ -1,14 +1,42 @@
 <main>
   <h1>Ticket Management</h1>
-  @for (ticket of tickets(); track ticket.id) {
-    <div class="ticket">
-      <h2>Table {{ ticket.tableNumber }}</h2>
-      <p>{{ ticket.items }}</p>
-      <p>Total: {{ ticket.total }} €</p>
-      <p>Status: {{ ticket.paid ? 'Paid' : 'Pending' }}</p>
-      <button (click)="deleteTicket(ticket.id)">Delete</button>
-    </div>
-  } @empty {
-    <p>No tickets yet.</p>
-  }
+
+  <form [formGroup]="form" (ngSubmit)="createTicket()">
+    <label>
+      Table
+      <input type="number" formControlName="tableNumber" />
+    </label>
+    <label>
+      Items
+      <input type="text" formControlName="items" />
+    </label>
+    <label>
+      Total
+      <input type="number" step="0.01" formControlName="total" />
+    </label>
+    <button type="submit" [disabled]="form.invalid">Create</button>
+  </form>
+
+  <section class="tickets">
+    @for (ticket of tickets(); track ticket.id) {
+      <article class="ticket">
+        <header>
+          <h2>Table {{ ticket.tableNumber }}</h2>
+          <span class="status" [class.paid]="ticket.paid">
+            {{ ticket.paid ? 'Paid' : 'Pending' }}
+          </span>
+        </header>
+        <p class="items">{{ ticket.items }}</p>
+        <p class="total">{{ ticket.total }} €</p>
+        <div class="actions">
+          @if (!ticket.paid) {
+            <button (click)="markPaid(ticket)">Mark paid</button>
+          }
+          <button class="danger" (click)="deleteTicket(ticket.id)">Delete</button>
+        </div>
+      </article>
+    } @empty {
+      <p>No tickets yet.</p>
+    }
+  </section>
 </main>
