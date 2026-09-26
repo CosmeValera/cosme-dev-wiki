@@ -1,6 +1,14 @@
-<p>Angular Java Exercise</p>
-
-  @if (greeting(); as g) {
-    <p>{{ g.message }}</p>
+<main>
+  <h1>Ticket Management</h1>
+  @for (ticket of tickets(); track ticket.id) {
+    <div class="ticket">
+      <h2>Table {{ ticket.tableNumber }}</h2>
+      <p>{{ ticket.items }}</p>
+      <p>Total: {{ ticket.total }} €</p>
+      <p>Status: {{ ticket.paid ? 'Paid' : 'Pending' }}</p>
+      <button (click)="deleteTicket(ticket.id)">Delete</button>
+    </div>
+  } @empty {
+    <p>No tickets yet.</p>
   }
-<router-outlet />
+</main>

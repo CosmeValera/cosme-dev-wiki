@@ -1,14 +1,23 @@
-import { Component, inject } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { toSignal } from '@angular/core/rxjs-interop';
-import { HelloService } from './hello.service';
+import { Component, inject, signal } from '@angular/core';
+import { TicketService } from './ticket-service';
+import { Ticket } from './types.model';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
-  greeting = toSignal(inject(HelloService).getSaludo('Cosme', 24));
+  private ticketService = inject(TicketService);
+  tickets = signal<Ticket[]>([]);
+
+  constructor() {
+    this.ticketService.getAllTickets().subscribe(t => this.tickets.set(t));
+  }
+
+  deleteTicket(id: number) {
+    this.ticketService.deleteTicket(id).subscribe(() =>
+      this.tickets.update(list => list.filter(t => t.id !== id))
+    );
+  }
 }
