@@ -7,6 +7,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Positive;
+import jakarta.validation.constraints.PositiveOrZero;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -21,10 +24,14 @@ public class Ticket {
   @GeneratedValue (strategy = GenerationType.IDENTITY)
   private Long id;
 
+  @Positive 
   @Setter private int tableNumber;
 
+  @NotBlank 
   @Setter private String items;
 
+  @Positive 
+  @PositiveOrZero 
   @Column(precision = 10, scale = 2)
   @Setter private BigDecimal total;
   

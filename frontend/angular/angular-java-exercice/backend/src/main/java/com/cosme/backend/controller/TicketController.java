@@ -16,6 +16,8 @@ import org.springframework.http.HttpStatus;
 import com.cosme.backend.model.Ticket;
 import com.cosme.backend.service.TicketService;
 
+import jakarta.validation.Valid;
+
 @RestController 
 @RequestMapping("/api/tickets")
 public class TicketController {
@@ -37,12 +39,12 @@ public class TicketController {
 
   @PostMapping()
   @ResponseStatus(HttpStatus.CREATED)
-  public Ticket createTicket(@RequestBody Ticket ticket) {
+  public Ticket createTicket(@Valid @RequestBody Ticket ticket) {
     return this.ticketService.createTicket(ticket);
   }
 
   @PutMapping("/{id}")
-  public Ticket updateTicket(@PathVariable long id, @RequestBody Ticket ticket) {
+  public Ticket updateTicket(@PathVariable long id, @Valid @RequestBody Ticket ticket) {
     return this.ticketService.updateTicket(id, ticket);
   }
 
