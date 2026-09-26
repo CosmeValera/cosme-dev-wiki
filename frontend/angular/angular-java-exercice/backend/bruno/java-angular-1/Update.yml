@@ -1,0 +1,18 @@
+info:
+  name: Update
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/tickets/{{ticketId}}"
+  body:
+    type: json
+    data: '{"tableNumber":4,"items":"2x pizza","total":24.5,"paid":true}'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
